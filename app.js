@@ -3,8 +3,8 @@ document.querySelector('input').addEventListener('input', e => {
 
 	const unique_strings = get_unique_strings(input)
 	const longest_string = get_longest_string(unique_strings)
-	
-	document.querySelector('#result').textContent = `Longest string is "${longest_string}" which is ${longest_string.length} characters`
+
+	document.querySelector('#result').textContent = `Longest unique substring is "${longest_string}" which is ${longest_string.length} characters`
 })
 
 function get_longest_string(input) {
